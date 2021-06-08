@@ -635,7 +635,7 @@ video {
   font-size: 1.25rem;
 }
 
-.button {
+.button-link {
   text-transform: uppercase;
   background-color: white;
   color: var(--verydarkgray);
@@ -650,7 +650,7 @@ video {
   box-shadow: 0px 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
-.button:last-child {
+.button-link:last-child {
   background-color: var(--brand-color);
   color: white;
   box-shadow: 0px 625rem 1.25rem var(--brand-shadow);
