@@ -11,12 +11,6 @@
       </head>
       <body data-instant-intensity="all" class="primo-page">   
         
-        <div class="block" id="block-eudnj">
-          <div class="primo-copy" id="copy-eudnj">
-            
-          </div>
-        </div>
-      
       <div class="block" id="block-qzpiv">
         <div class="primo-component" id="component-qzpiv">
           <div><div class="agency h-wrapper">
@@ -32,12 +26,12 @@
       </ul>
 <!--   		<ul id="nav">
         	<li><a href="">Home</a></li>
-      </ul>     -->
+      </ul>    --> 
     </nav>
   <div class="title">
     <h1 class="h1" id="main-heading">Creative and profit.</h1>
     <p id="heading-desc">We obtain results with marketing, creative, and industry experience.</p>
-		<div>
+		<div id="links">
       <a class="button-link" href="#"">About us</a>
       <a class="button-link" href="#">Get Virgo</a>
     </div>
@@ -74,7 +68,15 @@
   #component-qzpiv li {
     padding: .5rem;
   }
-  @media (min-width: 768px) {
+  #component-qzpiv .title {
+    margin: 2rem;
+  }
+  #component-qzpiv #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (min-width: 640px) {
     #component-qzpiv header {
       height: 67.625rem;
       display: flex;
@@ -99,6 +101,12 @@
     #component-qzpiv .title p {
       font-size: 1.375rem;
       margin: 2.625rem 0;
+    }
+
+    #component-qzpiv #links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
     #component-qzpiv address {

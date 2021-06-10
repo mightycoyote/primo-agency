@@ -621,13 +621,15 @@ video {
 .h1 {
   font-weight: 700;
   color: white;
-  font-size: 4.375rem;
+  /*   font-size: 4.375rem; */
+  font-size: clamp(2.5rem, 5vw, 4.375rem);
 }
 
 .h2 {
   font-weight: 700;
   color: var(--darkgray);
-  font-size: 2.5rem;
+  /*   font-size: 2.5rem; */
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
 }
 
 .h3 {
@@ -644,7 +646,7 @@ video {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.2625rem;
-  height: 3.9375rem;
+  /* height: 3.9375rem; */
   margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -675,13 +677,14 @@ video {
 .intro {
   margin: 0 auto;
   padding: 3rem;
-  width: 35%;
+  width: 70%;
   text-align: center;
   line-height: 2.1875rem;
 }
 
 .intro p {
   color: #4B4B4B;
+  padding-top: 1rem;
 }
 
 .visuallyhidden {
@@ -702,18 +705,23 @@ video {
   width: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
-  font-size: 1.125rem;
-  color: #374151;
+  font-size: 1rem;
+  color: #4B4B4B;
+  width: 70%;
 }
 
 .primo-copy h1 {
-    font-size: 1.875rem;
-    font-weight: 500;
+    font-size: 4.375rem;
+    font-weight: 700;
+    font-family: var(--display-font);
+    color: var(--darkgray);
   }
 
 .primo-copy h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--display-font);
+    color: var(--darkgray);
   }
 
 .primo-copy ol {
