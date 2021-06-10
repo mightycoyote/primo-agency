@@ -609,7 +609,7 @@ video {
   --display-font: 'Montserrat', sans-serif;
   --text-font: 'Lora', serif;
   font-family: var(--text-font);
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 0 auto;
   background-color: white;
 }
@@ -629,7 +629,7 @@ video {
   font-weight: 700;
   color: var(--darkgray);
   /*   font-size: 2.5rem; */
-  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 .h3 {
@@ -646,7 +646,6 @@ video {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.2625rem;
-  /* height: 3.9375rem; */
   margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -676,15 +675,21 @@ video {
 
 .intro {
   margin: 0 auto;
-  padding: 3rem;
-  width: 70%;
+  padding: 4rem;
+  width: 60%;
   text-align: center;
   line-height: 2.1875rem;
 }
 
 .intro p {
   color: #4B4B4B;
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .intro p {
+    font-size: 1.25rem;
+  }
 }
 
 .visuallyhidden {
