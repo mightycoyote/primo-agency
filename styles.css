@@ -665,6 +665,13 @@ video {
      object-fit: cover;
 }
 
+.address {
+  font-family: var(--display-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
 .intro {
   margin: 0 auto;
   padding: 3rem;

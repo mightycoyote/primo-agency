@@ -41,7 +41,7 @@
     <!--     <div>
     </div> -->
   </div>
-  <address>
+  <address class="address">
     <p id="email">info@virgo.com</p>
     <p id="phone">+8 800 555 35 35</p>
   </address>
@@ -49,17 +49,17 @@
 </div></div>
           
         </div>
-        <style type="text/css">#component-mpvqh .h-wrapper {
+        <style type="text/css">#component-qzpiv .h-wrapper {
     background: center / cover no-repeat;
     background-image: url(https://placeimg.com/1000/1000/tech);
     background-color: rgba(10, 10, 10, .8);
     background-blend-mode: multiply;
   }
-  #component-mpvqh header {
+  #component-qzpiv header {
     text-align: center;
     color: white;
   }
-  #component-mpvqh nav ul {
+  #component-qzpiv nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -70,17 +70,11 @@
     font-size: 0.8125rem;
     padding: 0;
   }
-  #component-mpvqh nav li {
+  #component-qzpiv nav li {
     padding: .5rem;
   }
-  #component-mpvqh address {
-    font-family: var(--display-font);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-  }
   @media (min-width: 768px) {
-    #component-mpvqh header {
+    #component-qzpiv header {
       height: 67.625rem;
       display: flex;
       flex-direction: column;
@@ -89,24 +83,24 @@
       margin: 0 auto;
     }
 
-    #component-mpvqh nav ul {
+    #component-qzpiv nav ul {
       flex-direction: row;
     }
 
-    #component-mpvqh nav {
+    #component-qzpiv nav {
       border-bottom: 4px solid rgba(255,255,255,0.1);
     }
 
-    #component-mpvqh .title {
+    #component-qzpiv .title {
       align-self: center;
     }
 
-    #component-mpvqh .title p {
+    #component-qzpiv .title p {
       font-size: 1.375rem;
       margin: 2.625rem 0;
     }
 
-    #component-mpvqh address {
+    #component-qzpiv address {
       display: flex;
       justify-content: space-between;
       margin: 3.375rem 4.75rem;
@@ -118,38 +112,38 @@
         <div class="primo-component" id="component-lwljh">
           <div><section class="portfolio agency">
   <div class="intro">
-    <h2 class="h2">Look what we do best.</h2>
-    <p>Have a look at this sample of our best work. Our team of experts have a wide range of competencies and specializations.</p>
+    <h2 class="h2" id="portfolio-heading">Look what we do best.</h2>
+    <p class="p" id="portfolio-desc">Have a look at this sample of our best work. Our team of experts have a wide range of competencies and specializations.</p>
   </div>
   <ul class="ul">
-    <li>LL</li>
-    <li>Digital</li>
-    <li>Branding</li>
-    <li>Marketing</li>
-    <li>Video</li>
-    <li>Photography</li>
+    <li><a href="#">LL</a></li>
+    <li><a href="#">Digital</a></li>
+    <li><a href="#">Branding</a></li>
+    <li><a href="#">Marketing</a></li>
+    <li><a href="#">Video</a></li>
+    <li><a href="#">Photography</a></li>
   </ul>
   <div class="gallery">
     <div class="tallpic">
-      <img class="img" src="https://placeimg.com/700/1400/tech" alt="">
+      <a href="#"><img class="img" src="https://placeimg.com/700/1400/tech" alt=""></a>
     </div>
     <div>
-      <img class="img" src="https://placeimg.com/750/700/tech" alt="">
+      <a href="#"><img class="img" src="https://placeimg.com/750/700/tech" alt=""></a>
     </div>
     <div>
-      <img class="img" src="https://placeimg.com/700/750/tech" alt="">
+      <a href="#"><img class="img" src="https://placeimg.com/700/750/tech" alt=""></a>
     </div>
     <div>
-      <img class="img" src="https://placeimg.com/800/700/tech" alt="">
+      <a href="#"><img class="img" src="https://placeimg.com/800/700/tech" alt=""></a>
     </div>
     <div>  
-      <img class="img" src="https://placeimg.com/650/700/tech" alt="">
+      <a href="#"><img class="img" src="https://placeimg.com/650/700/tech" alt=""></a>
     </div>
   </div>
 </section></div>
           
         </div>
-        <style type="text/css">#component-uhgqq .ul {
+        <style type="text/css">#component-lwljh .ul {
     list-style: none;
     justify-content: center;
     font-family: var(--display-font);
@@ -159,15 +153,19 @@
     letter-spacing: 0.15rem;
     padding-bottom: 1rem;
   }
-  #component-uhgqq .ul a:active {
+  #component-lwljh .ul a:active {
     color: var(--brand-color);
   }
   @media (min-width: 768px) {
-    #component-uhgqq .ul {
+    #component-lwljh .ul {
       display: flex;
     }
 
-    #component-uhgqq .gallery {
+    #component-lwljh .ul li {
+      padding: 1rem;
+    }
+
+    #component-lwljh .gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 50%);
@@ -176,7 +174,7 @@
       margin: 0 auto;
     }
 
-    #component-uhgqq .tallpic {
+    #component-lwljh .tallpic {
       grid-row-start: 1;
       grid-row-end: span 2;
     }
@@ -260,33 +258,33 @@
         <div class="primo-component" id="component-pjiwt">
           <div><section class="team agency">
   <div class="intro">
-    <h2 class="h2">Our magic team.</h2>
-    <p class="p">Our team of experts have a wide range of competencies and specializations.</p>
+    <h2 class="h2" id="team-heading">Our magic team.</h2>
+    <p class="p" id="team-desc">Our team of experts have a wide range of competencies and specializations.</p>
   </div>
   <div class="teampics">
     <figure>
-      <img src="https://placeimg.com/500/600/people" alt="">
+      <img class="img" src="https://placeimg.com/500/600/people" alt="">
       <figcaption>
         <p class="teamname p">Jack Wilshere</p>
         <p class="teamtitle p">CEO &#47; Founder </p>
       </figcaption>
     </figure>
     <figure>
-      <img src="https://placeimg.com/490/590/people" alt="">
+      <img class="img" src="https://placeimg.com/490/590/people" alt="">
       <figcaption>
         <p class="teamname p">Jack Wilshere</p>
         <p class="teamtitle p">CEO &#47; Founder </p>
       </figcaption>
     </figure>
     <figure>
-      <img src="https://placeimg.com/480/580/people" alt="">
+      <img class="img" src="https://placeimg.com/480/580/people" alt="">
       <figcaption>
         <p class="teamname p">Jack Wilshere</p>
         <p class="teamtitle p">CEO &#47; Founder </p>
       </figcaption>
     </figure>
     <figure>
-      <img src="https://placeimg.com/485/585/people" alt="">
+      <img class="img" src="https://placeimg.com/485/585/people" alt="">
       <figcaption>
         <p class="teamname p">Jack Wilshere</p>
         <p class="teamtitle p">CEO &#47; Founder </p>
@@ -336,8 +334,8 @@
           <div><section class="t-wrapper agency">
   <div class="testimonials">
     <div class="intro">
-      <h2 class="h2">Clients about us.</h2>
-      <p class="p">Our team of experts have a wide range of competencies and specializations.</p>
+      <h2 class="h2" id="test-heading">Clients about us.</h2>
+      <p class="p" id="test-desc">Our team of experts have a wide range of competencies and specializations.</p>
     </div>
     <div class="quotesblock">
       <figure>
@@ -430,7 +428,7 @@
         <div class="primo-component" id="component-mcndb">
           <div><section class="cta agency">
   <div>
-    <h2 class="h2">Offer your project to the Virgo Team.</h2>
+    <h2 class="h2" id="cta-heading">Offer your project to the Virgo Team.</h2>
     <a href="#" class="button-link">Let's talk</a>
   </div>
 </section></div>
@@ -471,7 +469,7 @@
         <li>contacts</li>
       </ul>
     </div>
-    <address>
+    <address class="address">
       <p class="p">+8 800 555 35 35</p>
       <p class="p">info@virgo.com</p>
     </address>
@@ -495,10 +493,10 @@
 </footer></div>
           
         </div>
-        <style type="text/css">#component-dbdmk footer {
+        <style type="text/css">#component-ctuod footer {
     background-color: var(--verydarkgray);
   }
-  #component-dbdmk .footerblock {
+  #component-ctuod .footerblock {
     color: white;
     font-size: 1rem;
     display: grid;
@@ -508,14 +506,14 @@
     max-width: 1920px;
     margin: 0 auto;
   }
-  #component-dbdmk .summary {
+  #component-ctuod .summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1.625rem;
     margin: 2rem;
   }
-  #component-dbdmk .footernav {
+  #component-ctuod .footernav {
     list-style: none;
     text-transform: uppercase;
     font-family: var(--display-font);
@@ -524,25 +522,25 @@
     line-height: 1.75rem;
     margin-left: 3rem;
   }
-  #component-dbdmk .footernav li {
+  #component-ctuod .footernav li {
     padding: 0;
   }
-  #component-dbdmk address {
+  #component-ctuod address {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
   }
-  #component-dbdmk .subscribe {
+  #component-ctuod .subscribe {
     padding: 1em;
     font-size: 1.25rem;
     margin: 0;
   }
-  #component-dbdmk #emailbox {
+  #component-ctuod #emailbox {
     display: flex;
     align-items: stretch;
   }
-  #component-dbdmk #email {
+  #component-ctuod #email {
     flex: 0 1 100%;
     display: block;
     border-width: 0;
@@ -551,19 +549,19 @@
     margin: 0;
     border-radius: 2rem 0 0 2rem;
   }
-  #component-dbdmk #email::-moz-placeholder {
+  #component-ctuod #email::-moz-placeholder {
     color: #8A8A8A;
     font-family: var(--text-font)
   }
-  #component-dbdmk #email:-ms-input-placeholder {
+  #component-ctuod #email:-ms-input-placeholder {
     color: #8A8A8A;
     font-family: var(--text-font)
   }
-  #component-dbdmk #email::placeholder {
+  #component-ctuod #email::placeholder {
     color: #8A8A8A;
     font-family: var(--text-font)
   }
-  #component-dbdmk #emailbutton {
+  #component-ctuod #emailbutton {
     flex: 0 0 3em;
     display: block;
     background-color: #6534FF;
@@ -572,22 +570,22 @@
     border-radius: 0 2rem 2rem 0;
     box-shadow: none;
   }
-  #component-dbdmk #icon {
+  #component-ctuod #icon {
     height: 1rem;
     width: 1rem;
     background-color: white;
     margin: 0 auto;
   }
   @media (min-width: 768px) {
-    #component-dbdmk .footerblock {
+    #component-ctuod .footerblock {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       width: 70%;
     }
   }
-  #component-dbdmk .c-wrapper {
+  #component-ctuod .c-wrapper {
     background-color: #1C1C1C;
   }
-  #component-dbdmk .copyright {
+  #component-ctuod .copyright {
     /* written #525252, replaced with an accessible color */
     color: #DEDEDE;
     height: 5rem;
@@ -597,6 +595,7 @@
     width: 70%;
     max-width: 1920px;
     margin: 0 auto;
+    font-size: .75rem;
   }</style>
       </div>
       
