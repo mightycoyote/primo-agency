@@ -236,9 +236,6 @@
         <style type="text/css">#component-fuvci .s-wrapper {
     background-color: var(--verydarkgray);
   }
-  #component-fuvci .services {
-    padding: 2rem;
-  }
   #component-fuvci .h3 {
     color: white;
     text-transform: uppercase;
@@ -247,7 +244,6 @@
   #component-fuvci p {
     color: #9A9A9A;
     line-height: 1.875rem;
-    padding-bottom: 4rem;
   }
   #component-fuvci .square {
     width: 3rem;
@@ -255,21 +251,14 @@
     background-color: var(--brand-color);
     margin-bottom: 3rem;
   }
-  @media (min-width: 1024px) {
-    #component-fuvci .services {
-      display: grid;
-      grid: auto-flow / 1fr 1fr 1fr;
-      gap: 5rem;
-      width: 70%;
-      margin: 0 auto;
-      padding-top: 7.625rem;
-      padding-bottom: 7.625rem;
-      max-width: 1920px;
-    }
-
-    #component-fuvci p {
-      padding: 0;
-    }
+  #component-fuvci .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 5rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 7.625rem 2rem;
+    max-width: 1920px;
   }</style>
       </div>
       
@@ -375,13 +364,24 @@
   }
   #component-mubnk .testimonials {
     padding: 2rem;
+    max-width: 1920px;
   }
   #component-mubnk .quotesblock {
     margin: 0 auto;
     color: var(--dark-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+  }
+  @media (min-width: 640px) {
+    #component-mubnk .quotesblock {
+      max-width: 70%;
+    }
   }
   #component-mubnk figure {
-    padding-bottom: 2.5rem;
+    background: padding-box no-repeat url("img/noun_quotation_1903069_1.svg");
+    padding: 4rem 4.5rem;
+    margin: 0 auto;
   }
   #component-mubnk blockquote {
     margin: 0;
@@ -396,25 +396,6 @@
   }
   #component-mubnk .quotetitle {
     font-style: italic;
-  }
-  @media (min-width: 1024px) {
-    #component-mubnk .quotesblock {
-      display: grid;
-      grid: auto-flow / 1fr 1fr;
-      gap: 2rem;
-    }
-
-    #component-mubnk .quotesblock figure {
-      background: padding-box no-repeat url("img/noun_quotation_1903069_1.svg");
-      padding: 4rem 4.5rem;
-      margin: 0 auto;
-    }
-  }
-  @media (min-width: 1280px) {
-    #component-mubnk .quotesblock {
-      width: 70%;
-      max-width: 1920px;
-    }
   }</style>
       </div>
       
@@ -443,7 +424,7 @@
   #component-mxqix .logos div {
     height: 4.5rem;
     width: 8rem;
-    background-color: lightgray;
+    background-color: var(--lightgray);
   }</style>
       </div>
       
