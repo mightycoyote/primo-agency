@@ -676,7 +676,6 @@ video {
 .intro {
   margin: 0 auto;
   padding: 4rem;
-  width: 60%;
   text-align: center;
   line-height: 2.1875rem;
 }
@@ -689,6 +688,13 @@ video {
 @media (min-width: 768px) {
   .intro p {
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro p {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
