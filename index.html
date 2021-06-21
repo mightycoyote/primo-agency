@@ -404,25 +404,28 @@
     	<img src='/assets/logoipsum-logo-24.png' alt="logo" id="logos"/>
     	<img src='/assets/logoipsum-logo-29.png' alt="logo" id="logos"/>
     	<img src='/assets/logoipsum-logo-32.png' alt="logo" id="logos"/>
-    <!--img src='/assets/logoipsum-logo-7.png' alt=""-->
   <div>
 </section></div>
           
         </div>
-        <style type="text/css">#component-mxqix {
-  /* img {
-  height: 4.5rem;
-}
- */
-}
-  #component-mxqix #grid {
+        <style type="text/css">#component-mxqix #grid {
     display: grid;
-    justify-content: center;
+    place-items: center;
     margin: 0 auto;
-    padding: 5rem;
-    grid-template-columns: repeat( auto-fit, min(4.5rem) );
-    gap: 10rem;
-    max-width: 1920px;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  @media (min-width: 640px) {
+    #component-mxqix #grid {
+      grid-template-columns: repeat( 2, 1fr );
+    }
+  }
+  @media (min-width: 768px) {
+    #component-mxqix #grid {
+      padding: 5rem;
+      grid-template-columns: repeat( 6, 1fr );
+      max-width: 1344px;
+    }
   }</style>
       </div>
       
