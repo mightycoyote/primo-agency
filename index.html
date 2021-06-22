@@ -519,25 +519,66 @@
 					&quot;id&quot;: &quot;mubnk&quot;,
 					&quot;symbolID&quot;: &quot;uxmqt&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  margin: 0 auto;\n}\nblockquote {\n  margin: 0;\n  font-size: 1.125rem;\n  line-height: 2.25rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n@media (min-width: 768px) {\n  .quotesblock {\n    display: grid;\n    grid: auto-flow / 1fr 1fr;\n    gap: 2rem;\n    width: 60%;\n    margin: 0 auto;\n    color: var(--dark-color);\n    max-width: 1920px;\n    margin: 0 auto;\n  }\n  .quotesblock figure {\n    background: padding-box no-repeat url(\&quot;img/noun_quotation_1903069_1.svg\&quot;);\n    padding: 4rem 4.5rem;\n    margin: 0 auto;\n  }\n}&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;test-heading\&quot;&gt;{{test-heading}}&lt;/h2&gt;\n      &lt;p class&#x3D;\&quot;p\&quot; id&#x3D;\&quot;test-desc\&quot;&gt;{{test-desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
 								&quot;id&quot;: &quot;khwwj&quot;,
-								&quot;key&quot;: &quot;test-heading&quot;,
-								&quot;label&quot;: &quot;test-heading&quot;,
+								&quot;key&quot;: &quot;heading&quot;,
+								&quot;label&quot;: &quot;heading&quot;,
 								&quot;value&quot;: &quot;Clients about us.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
 							},
 							{
 								&quot;id&quot;: &quot;aleiq&quot;,
-								&quot;key&quot;: &quot;test-desc&quot;,
-								&quot;label&quot;: &quot;test-desc&quot;,
+								&quot;key&quot;: &quot;desc&quot;,
+								&quot;label&quot;: &quot;desc&quot;,
 								&quot;value&quot;: &quot;Our team of experts have a wide range of competencies and specializations.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;cbnhg&quot;,
+								&quot;key&quot;: &quot;quote&quot;,
+								&quot;label&quot;: &quot;quote&quot;,
+								&quot;value&quot;: [
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									},
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									}
+								],
+								&quot;type&quot;: &quot;repeater&quot;,
+								&quot;fields&quot;: [
+									{
+										&quot;id&quot;: &quot;ypciq&quot;,
+										&quot;key&quot;: &quot;quotetext&quot;,
+										&quot;label&quot;: &quot;quotetext&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;smxrk&quot;,
+										&quot;key&quot;: &quot;sourcename&quot;,
+										&quot;label&quot;: &quot;sourcename&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;phugs&quot;,
+										&quot;key&quot;: &quot;sourcetitle&quot;,
+										&quot;label&quot;: &quot;sourcetitle&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									}
+								]
 							}
 						]
 					}
@@ -618,8 +659,8 @@
 					&quot;id&quot;: &quot;mcndb&quot;,
 					&quot;symbolID&quot;: &quot;lbdfn&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.cta {\n  text-align: center;\n  background-color: var(--brand-color);\n  height: 15.8125rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.h2 {\n  color: white;\n  margin-bottom: 1.25rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;cta agency\&quot;&gt;\n  &lt;div&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
@@ -628,6 +669,18 @@
 								&quot;label&quot;: &quot;cta-heading&quot;,
 								&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
+								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;vsyqt&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: {
+									&quot;label&quot;: &quot;Let&#x27;s talk&quot;,
+									&quot;url&quot;: &quot;www.example.com&quot;,
+									&quot;active&quot;: false
+								},
+								&quot;type&quot;: &quot;link&quot;,
 								&quot;fields&quot;: []
 							}
 						]
@@ -895,15 +948,23 @@
 			&quot;id&quot;: &quot;lbdfn&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
 						&quot;id&quot;: &quot;helzk&quot;,
 						&quot;key&quot;: &quot;cta-heading&quot;,
 						&quot;label&quot;: &quot;cta-heading&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 						&quot;type&quot;: &quot;text&quot;,
+						&quot;fields&quot;: []
+					},
+					{
+						&quot;id&quot;: &quot;vsyqt&quot;,
+						&quot;key&quot;: &quot;link&quot;,
+						&quot;label&quot;: &quot;link&quot;,
+						&quot;value&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;link&quot;,
 						&quot;fields&quot;: []
 					}
 				]
@@ -921,7 +982,50 @@
 						&quot;id&quot;: &quot;yzcou&quot;,
 						&quot;key&quot;: &quot;logos&quot;,
 						&quot;label&quot;: &quot;logos&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: [
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-7.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-16.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-18.png&quot;,
+									&quot;size&quot;: 5
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-24.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-29.png&quot;,
+									&quot;size&quot;: 3
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-32.png&quot;,
+									&quot;size&quot;: 3
+								}
+							}
+						],
 						&quot;type&quot;: &quot;repeater&quot;,
 						&quot;fields&quot;: [
 							{
@@ -930,6 +1034,13 @@
 								&quot;label&quot;: &quot;logo&quot;,
 								&quot;value&quot;: &quot;&quot;,
 								&quot;type&quot;: &quot;image&quot;
+							},
+							{
+								&quot;id&quot;: &quot;czone&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: &quot;&quot;,
+								&quot;type&quot;: &quot;link&quot;
 							}
 						]
 					}
@@ -941,7 +1052,7 @@
 			&quot;id&quot;: &quot;uxmqt&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
@@ -1727,25 +1838,66 @@
 					&quot;id&quot;: &quot;mubnk&quot;,
 					&quot;symbolID&quot;: &quot;uxmqt&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  margin: 0 auto;\n}\nblockquote {\n  margin: 0;\n  font-size: 1.125rem;\n  line-height: 2.25rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n@media (min-width: 768px) {\n  .quotesblock {\n    display: grid;\n    grid: auto-flow / 1fr 1fr;\n    gap: 2rem;\n    width: 60%;\n    margin: 0 auto;\n    color: var(--dark-color);\n    max-width: 1920px;\n    margin: 0 auto;\n  }\n  .quotesblock figure {\n    background: padding-box no-repeat url(\&quot;img/noun_quotation_1903069_1.svg\&quot;);\n    padding: 4rem 4.5rem;\n    margin: 0 auto;\n  }\n}&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;test-heading\&quot;&gt;{{test-heading}}&lt;/h2&gt;\n      &lt;p class&#x3D;\&quot;p\&quot; id&#x3D;\&quot;test-desc\&quot;&gt;{{test-desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
 								&quot;id&quot;: &quot;khwwj&quot;,
-								&quot;key&quot;: &quot;test-heading&quot;,
-								&quot;label&quot;: &quot;test-heading&quot;,
+								&quot;key&quot;: &quot;heading&quot;,
+								&quot;label&quot;: &quot;heading&quot;,
 								&quot;value&quot;: &quot;Clients about us.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
 							},
 							{
 								&quot;id&quot;: &quot;aleiq&quot;,
-								&quot;key&quot;: &quot;test-desc&quot;,
-								&quot;label&quot;: &quot;test-desc&quot;,
+								&quot;key&quot;: &quot;desc&quot;,
+								&quot;label&quot;: &quot;desc&quot;,
 								&quot;value&quot;: &quot;Our team of experts have a wide range of competencies and specializations.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;cbnhg&quot;,
+								&quot;key&quot;: &quot;quote&quot;,
+								&quot;label&quot;: &quot;quote&quot;,
+								&quot;value&quot;: [
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									},
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									}
+								],
+								&quot;type&quot;: &quot;repeater&quot;,
+								&quot;fields&quot;: [
+									{
+										&quot;id&quot;: &quot;ypciq&quot;,
+										&quot;key&quot;: &quot;quotetext&quot;,
+										&quot;label&quot;: &quot;quotetext&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;smxrk&quot;,
+										&quot;key&quot;: &quot;sourcename&quot;,
+										&quot;label&quot;: &quot;sourcename&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;phugs&quot;,
+										&quot;key&quot;: &quot;sourcetitle&quot;,
+										&quot;label&quot;: &quot;sourcetitle&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									}
+								]
 							}
 						]
 					}
@@ -1826,8 +1978,8 @@
 					&quot;id&quot;: &quot;mcndb&quot;,
 					&quot;symbolID&quot;: &quot;lbdfn&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.cta {\n  text-align: center;\n  background-color: var(--brand-color);\n  height: 15.8125rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.h2 {\n  color: white;\n  margin-bottom: 1.25rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;cta agency\&quot;&gt;\n  &lt;div&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
@@ -1836,6 +1988,18 @@
 								&quot;label&quot;: &quot;cta-heading&quot;,
 								&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
+								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;vsyqt&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: {
+									&quot;label&quot;: &quot;Let&#x27;s talk&quot;,
+									&quot;url&quot;: &quot;www.example.com&quot;,
+									&quot;active&quot;: false
+								},
+								&quot;type&quot;: &quot;link&quot;,
 								&quot;fields&quot;: []
 							}
 						]
@@ -2103,15 +2267,23 @@
 			&quot;id&quot;: &quot;lbdfn&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
 						&quot;id&quot;: &quot;helzk&quot;,
 						&quot;key&quot;: &quot;cta-heading&quot;,
 						&quot;label&quot;: &quot;cta-heading&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 						&quot;type&quot;: &quot;text&quot;,
+						&quot;fields&quot;: []
+					},
+					{
+						&quot;id&quot;: &quot;vsyqt&quot;,
+						&quot;key&quot;: &quot;link&quot;,
+						&quot;label&quot;: &quot;link&quot;,
+						&quot;value&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;link&quot;,
 						&quot;fields&quot;: []
 					}
 				]
@@ -2129,7 +2301,50 @@
 						&quot;id&quot;: &quot;yzcou&quot;,
 						&quot;key&quot;: &quot;logos&quot;,
 						&quot;label&quot;: &quot;logos&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: [
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-7.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-16.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-18.png&quot;,
+									&quot;size&quot;: 5
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-24.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-29.png&quot;,
+									&quot;size&quot;: 3
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-32.png&quot;,
+									&quot;size&quot;: 3
+								}
+							}
+						],
 						&quot;type&quot;: &quot;repeater&quot;,
 						&quot;fields&quot;: [
 							{
@@ -2138,6 +2353,13 @@
 								&quot;label&quot;: &quot;logo&quot;,
 								&quot;value&quot;: &quot;&quot;,
 								&quot;type&quot;: &quot;image&quot;
+							},
+							{
+								&quot;id&quot;: &quot;czone&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: &quot;&quot;,
+								&quot;type&quot;: &quot;link&quot;
 							}
 						]
 					}
@@ -2149,7 +2371,7 @@
 			&quot;id&quot;: &quot;uxmqt&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
@@ -2935,25 +3157,66 @@
 					&quot;id&quot;: &quot;mubnk&quot;,
 					&quot;symbolID&quot;: &quot;uxmqt&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  margin: 0 auto;\n}\nblockquote {\n  margin: 0;\n  font-size: 1.125rem;\n  line-height: 2.25rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n@media (min-width: 768px) {\n  .quotesblock {\n    display: grid;\n    grid: auto-flow / 1fr 1fr;\n    gap: 2rem;\n    width: 60%;\n    margin: 0 auto;\n    color: var(--dark-color);\n    max-width: 1920px;\n    margin: 0 auto;\n  }\n  .quotesblock figure {\n    background: padding-box no-repeat url(\&quot;img/noun_quotation_1903069_1.svg\&quot;);\n    padding: 4rem 4.5rem;\n    margin: 0 auto;\n  }\n}&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;test-heading\&quot;&gt;{{test-heading}}&lt;/h2&gt;\n      &lt;p class&#x3D;\&quot;p\&quot; id&#x3D;\&quot;test-desc\&quot;&gt;{{test-desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
 								&quot;id&quot;: &quot;khwwj&quot;,
-								&quot;key&quot;: &quot;test-heading&quot;,
-								&quot;label&quot;: &quot;test-heading&quot;,
+								&quot;key&quot;: &quot;heading&quot;,
+								&quot;label&quot;: &quot;heading&quot;,
 								&quot;value&quot;: &quot;Clients about us.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
 							},
 							{
 								&quot;id&quot;: &quot;aleiq&quot;,
-								&quot;key&quot;: &quot;test-desc&quot;,
-								&quot;label&quot;: &quot;test-desc&quot;,
+								&quot;key&quot;: &quot;desc&quot;,
+								&quot;label&quot;: &quot;desc&quot;,
 								&quot;value&quot;: &quot;Our team of experts have a wide range of competencies and specializations.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;cbnhg&quot;,
+								&quot;key&quot;: &quot;quote&quot;,
+								&quot;label&quot;: &quot;quote&quot;,
+								&quot;value&quot;: [
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									},
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									}
+								],
+								&quot;type&quot;: &quot;repeater&quot;,
+								&quot;fields&quot;: [
+									{
+										&quot;id&quot;: &quot;ypciq&quot;,
+										&quot;key&quot;: &quot;quotetext&quot;,
+										&quot;label&quot;: &quot;quotetext&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;smxrk&quot;,
+										&quot;key&quot;: &quot;sourcename&quot;,
+										&quot;label&quot;: &quot;sourcename&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;phugs&quot;,
+										&quot;key&quot;: &quot;sourcetitle&quot;,
+										&quot;label&quot;: &quot;sourcetitle&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									}
+								]
 							}
 						]
 					}
@@ -3034,8 +3297,8 @@
 					&quot;id&quot;: &quot;mcndb&quot;,
 					&quot;symbolID&quot;: &quot;lbdfn&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.cta {\n  text-align: center;\n  background-color: var(--brand-color);\n  height: 15.8125rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.h2 {\n  color: white;\n  margin-bottom: 1.25rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;cta agency\&quot;&gt;\n  &lt;div&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
@@ -3044,6 +3307,18 @@
 								&quot;label&quot;: &quot;cta-heading&quot;,
 								&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
+								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;vsyqt&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: {
+									&quot;label&quot;: &quot;Let&#x27;s talk&quot;,
+									&quot;url&quot;: &quot;www.example.com&quot;,
+									&quot;active&quot;: false
+								},
+								&quot;type&quot;: &quot;link&quot;,
 								&quot;fields&quot;: []
 							}
 						]
@@ -3311,15 +3586,23 @@
 			&quot;id&quot;: &quot;lbdfn&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
 						&quot;id&quot;: &quot;helzk&quot;,
 						&quot;key&quot;: &quot;cta-heading&quot;,
 						&quot;label&quot;: &quot;cta-heading&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 						&quot;type&quot;: &quot;text&quot;,
+						&quot;fields&quot;: []
+					},
+					{
+						&quot;id&quot;: &quot;vsyqt&quot;,
+						&quot;key&quot;: &quot;link&quot;,
+						&quot;label&quot;: &quot;link&quot;,
+						&quot;value&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;link&quot;,
 						&quot;fields&quot;: []
 					}
 				]
@@ -3337,7 +3620,50 @@
 						&quot;id&quot;: &quot;yzcou&quot;,
 						&quot;key&quot;: &quot;logos&quot;,
 						&quot;label&quot;: &quot;logos&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: [
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-7.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-16.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-18.png&quot;,
+									&quot;size&quot;: 5
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-24.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-29.png&quot;,
+									&quot;size&quot;: 3
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-32.png&quot;,
+									&quot;size&quot;: 3
+								}
+							}
+						],
 						&quot;type&quot;: &quot;repeater&quot;,
 						&quot;fields&quot;: [
 							{
@@ -3346,6 +3672,13 @@
 								&quot;label&quot;: &quot;logo&quot;,
 								&quot;value&quot;: &quot;&quot;,
 								&quot;type&quot;: &quot;image&quot;
+							},
+							{
+								&quot;id&quot;: &quot;czone&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: &quot;&quot;,
+								&quot;type&quot;: &quot;link&quot;
 							}
 						]
 					}
@@ -3357,7 +3690,7 @@
 			&quot;id&quot;: &quot;uxmqt&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
@@ -4143,25 +4476,66 @@
 					&quot;id&quot;: &quot;mubnk&quot;,
 					&quot;symbolID&quot;: &quot;uxmqt&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  margin: 0 auto;\n}\nblockquote {\n  margin: 0;\n  font-size: 1.125rem;\n  line-height: 2.25rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n@media (min-width: 768px) {\n  .quotesblock {\n    display: grid;\n    grid: auto-flow / 1fr 1fr;\n    gap: 2rem;\n    width: 60%;\n    margin: 0 auto;\n    color: var(--dark-color);\n    max-width: 1920px;\n    margin: 0 auto;\n  }\n  .quotesblock figure {\n    background: padding-box no-repeat url(\&quot;img/noun_quotation_1903069_1.svg\&quot;);\n    padding: 4rem 4.5rem;\n    margin: 0 auto;\n  }\n}&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;test-heading\&quot;&gt;{{test-heading}}&lt;/h2&gt;\n      &lt;p class&#x3D;\&quot;p\&quot; id&#x3D;\&quot;test-desc\&quot;&gt;{{test-desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p class&#x3D;\&quot;p\&quot;&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
 								&quot;id&quot;: &quot;khwwj&quot;,
-								&quot;key&quot;: &quot;test-heading&quot;,
-								&quot;label&quot;: &quot;test-heading&quot;,
+								&quot;key&quot;: &quot;heading&quot;,
+								&quot;label&quot;: &quot;heading&quot;,
 								&quot;value&quot;: &quot;Clients about us.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
 							},
 							{
 								&quot;id&quot;: &quot;aleiq&quot;,
-								&quot;key&quot;: &quot;test-desc&quot;,
-								&quot;label&quot;: &quot;test-desc&quot;,
+								&quot;key&quot;: &quot;desc&quot;,
+								&quot;label&quot;: &quot;desc&quot;,
 								&quot;value&quot;: &quot;Our team of experts have a wide range of competencies and specializations.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
 								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;cbnhg&quot;,
+								&quot;key&quot;: &quot;quote&quot;,
+								&quot;label&quot;: &quot;quote&quot;,
+								&quot;value&quot;: [
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									},
+									{
+										&quot;quotetext&quot;: &quot;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&quot;,
+										&quot;sourcename&quot;: &quot;Calum Chambers&quot;,
+										&quot;sourcetitle&quot;: &quot;Adobe sales manager&quot;
+									}
+								],
+								&quot;type&quot;: &quot;repeater&quot;,
+								&quot;fields&quot;: [
+									{
+										&quot;id&quot;: &quot;ypciq&quot;,
+										&quot;key&quot;: &quot;quotetext&quot;,
+										&quot;label&quot;: &quot;quotetext&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;smxrk&quot;,
+										&quot;key&quot;: &quot;sourcename&quot;,
+										&quot;label&quot;: &quot;sourcename&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									},
+									{
+										&quot;id&quot;: &quot;phugs&quot;,
+										&quot;key&quot;: &quot;sourcetitle&quot;,
+										&quot;label&quot;: &quot;sourcetitle&quot;,
+										&quot;value&quot;: &quot;&quot;,
+										&quot;type&quot;: &quot;text&quot;
+									}
+								]
 							}
 						]
 					}
@@ -4242,8 +4616,8 @@
 					&quot;id&quot;: &quot;mcndb&quot;,
 					&quot;symbolID&quot;: &quot;lbdfn&quot;,
 					&quot;value&quot;: {
-						&quot;css&quot;: &quot;.cta {\n  text-align: center;\n  background-color: var(--brand-color);\n  height: 15.8125rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.h2 {\n  color: white;\n  margin-bottom: 1.25rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;cta agency\&quot;&gt;\n  &lt;div&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+						&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
+						&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 						&quot;js&quot;: &quot;&quot;,
 						&quot;fields&quot;: [
 							{
@@ -4252,6 +4626,18 @@
 								&quot;label&quot;: &quot;cta-heading&quot;,
 								&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 								&quot;type&quot;: &quot;text&quot;,
+								&quot;fields&quot;: []
+							},
+							{
+								&quot;id&quot;: &quot;vsyqt&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: {
+									&quot;label&quot;: &quot;Let&#x27;s talk&quot;,
+									&quot;url&quot;: &quot;www.example.com&quot;,
+									&quot;active&quot;: false
+								},
+								&quot;type&quot;: &quot;link&quot;,
 								&quot;fields&quot;: []
 							}
 						]
@@ -4519,15 +4905,23 @@
 			&quot;id&quot;: &quot;lbdfn&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.c-wrapper {\n  text-align: center;\n  background-color: var(--brand-color);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.cta {\n  padding-top: 3rem;\n  padding-bottom: 5rem;\n}\n.h2 {\n  color: white;\n  padding-bottom: 3rem;\n}\n.button-link {\n  background-color: white;\n  color: var(--verydarkgray);\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;#\&quot; class&#x3D;\&quot;button-link\&quot;&gt;Let&#x27;s talk&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;c-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;cta\&quot;&gt;\n    &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;cta-heading\&quot;&gt;{{cta-heading}}&lt;/h2&gt;\n    &lt;a href&#x3D;\&quot;{{link.url}}\&quot; id&#x3D;\&quot;link\&quot; class&#x3D;\&quot;button-link\&quot;&gt;{{link.label}}&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
 						&quot;id&quot;: &quot;helzk&quot;,
 						&quot;key&quot;: &quot;cta-heading&quot;,
 						&quot;label&quot;: &quot;cta-heading&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: &quot;Offer your project to the Virgo Team.&quot;,
 						&quot;type&quot;: &quot;text&quot;,
+						&quot;fields&quot;: []
+					},
+					{
+						&quot;id&quot;: &quot;vsyqt&quot;,
+						&quot;key&quot;: &quot;link&quot;,
+						&quot;label&quot;: &quot;link&quot;,
+						&quot;value&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;link&quot;,
 						&quot;fields&quot;: []
 					}
 				]
@@ -4545,7 +4939,50 @@
 						&quot;id&quot;: &quot;yzcou&quot;,
 						&quot;key&quot;: &quot;logos&quot;,
 						&quot;label&quot;: &quot;logos&quot;,
-						&quot;value&quot;: &quot;&quot;,
+						&quot;value&quot;: [
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-7.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-16.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-18.png&quot;,
+									&quot;size&quot;: 5
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-24.png&quot;,
+									&quot;size&quot;: 2
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-29.png&quot;,
+									&quot;size&quot;: 3
+								}
+							},
+							{
+								&quot;logo&quot;: {
+									&quot;alt&quot;: &quot;logo&quot;,
+									&quot;url&quot;: &quot;https://raw.githubusercontent.com/mightycoyote/primo-agency/main/assets/logoipsum-logo-32.png&quot;,
+									&quot;size&quot;: 3
+								}
+							}
+						],
 						&quot;type&quot;: &quot;repeater&quot;,
 						&quot;fields&quot;: [
 							{
@@ -4554,6 +4991,13 @@
 								&quot;label&quot;: &quot;logo&quot;,
 								&quot;value&quot;: &quot;&quot;,
 								&quot;type&quot;: &quot;image&quot;
+							},
+							{
+								&quot;id&quot;: &quot;czone&quot;,
+								&quot;key&quot;: &quot;link&quot;,
+								&quot;label&quot;: &quot;link&quot;,
+								&quot;value&quot;: &quot;&quot;,
+								&quot;type&quot;: &quot;link&quot;
 							}
 						]
 					}
@@ -4565,7 +5009,7 @@
 			&quot;id&quot;: &quot;uxmqt&quot;,
 			&quot;value&quot;: {
 				&quot;css&quot;: &quot;.t-wrapper {\n  background-color: #F7F7F7;\n}\n.testimonials {\n  padding: 2rem;\n  max-width: 1920px;\n}\n.quotesblock {\n  margin: 0 auto;\n  color: var(--dark-color);\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));\n\tgap: 2rem;\n  font-size: clamp(.8rem, 1vw, 1.125rem);\n}\n@media (min-width: 640px) {\n  .quotesblock {\n  \tmax-width: 70%;\n  }\n}\nfigure {\n  padding: 4rem 4.5rem;\n  margin: 0 auto;\n  background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg&#x3D;&#x3D;);\n}\nblockquote {\n  margin: 0;\n  line-height: 2.25rem;\n  padding-bottom: 2rem;\n}\n.quotename {\n  text-transform: uppercase;\n  font-family: var(--display-font);\n  font-weight: 600;\n}\n.quotetitle {\n  font-style: italic;\n}\n&quot;,
-				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt; \n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
+				&quot;html&quot;: &quot;&lt;section class&#x3D;\&quot;t-wrapper agency\&quot;&gt;\n  &lt;div class&#x3D;\&quot;testimonials\&quot;&gt;\n    &lt;div class&#x3D;\&quot;intro\&quot;&gt;\n      &lt;h2 class&#x3D;\&quot;h2\&quot; id&#x3D;\&quot;heading\&quot;&gt;{{heading}}&lt;/h2&gt;\n      &lt;p id&#x3D;\&quot;desc\&quot;&gt;{{desc}}&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class&#x3D;\&quot;quotesblock\&quot;&gt;\n\t\t\t{{#each quote}}\n      \t&lt;figure&gt;\n          &lt;blockquote id&#x3D;\&quot;quotetext\&quot;&gt;{{quotetext}}&lt;/blockquote&gt;\n          &lt;p&gt;\n            &lt;span class&#x3D;\&quot;quotename\&quot; id&#x3D;\&quot;sourcename\&quot;&gt;{{sourcename}}&amp;nbsp;&amp;nbsp;—&lt;/span&gt;\n            &lt;span class&#x3D;\&quot;quotetitle\&quot; id&#x3D;\&quot;sourcetitle\&quot;&gt;&amp;nbsp;&amp;nbsp;{{sourcetitle}}&lt;/span&gt;\n          &lt;/p&gt;          \n        &lt;/figure&gt;\n      {{/each}}\n      &lt;!--       &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;\n      &lt;figure&gt;\n        &lt;blockquote&gt;Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.&lt;/blockquote&gt;\n        &lt;p&gt;&lt;span class&#x3D;\&quot;quotename\&quot;&gt;Calum Chambers &amp;nbsp;&amp;nbsp;— &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class&#x3D;\&quot;quotetitle\&quot;&gt;Adobe sales manager&lt;/span&gt;&lt;/p&gt;\n      &lt;/figure&gt;  --&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/section&gt;&quot;,
 				&quot;js&quot;: &quot;&quot;,
 				&quot;fields&quot;: [
 					{
@@ -5207,18 +5651,32 @@
           <div><section class="t-wrapper agency">
   <div class="testimonials">
     <div class="intro">
-      <h2 class="h2" id="heading"></h2>
-      <p id="desc"></p>
+      <h2 class="h2" id="heading">Clients about us.</h2>
+      <p id="desc">Our team of experts have a wide range of competencies and specializations.</p>
     </div>
     <div class="quotesblock">
-      <figure>
+      	<figure>
+          <blockquote id="quotetext">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
+          <p>
+            <span class="quotename" id="sourcename">Calum Chambers&nbsp;&nbsp;—</span>
+            <span class="quotetitle" id="sourcetitle">&nbsp;&nbsp;Adobe sales manager</span>
+          </p>          
+        </figure>
+      	<figure>
+          <blockquote id="quotetext">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
+          <p>
+            <span class="quotename" id="sourcename">Calum Chambers&nbsp;&nbsp;—</span>
+            <span class="quotetitle" id="sourcetitle">&nbsp;&nbsp;Adobe sales manager</span>
+          </p>          
+        </figure>
+      <!--       <figure>
         <blockquote>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
         <p><span class="quotename">Calum Chambers &nbsp;&nbsp;— &nbsp;&nbsp;</span><span class="quotetitle">Adobe sales manager</span></p>
       </figure>
       <figure>
         <blockquote>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
         <p><span class="quotename">Calum Chambers &nbsp;&nbsp;— &nbsp;&nbsp;</span><span class="quotetitle">Adobe sales manager</span></p>
-      </figure> 
+      </figure>  -->
     </div>
   </div>
 </section></div>
@@ -5306,7 +5764,7 @@
           <div><section class="c-wrapper agency">
   <div class="cta">
     <h2 class="h2" id="cta-heading">Offer your project to the Virgo Team.</h2>
-    <a href="#" class="button-link">Let's talk</a>
+    <a href="www.example.com" id="link" class="button-link">Let&#x27;s talk</a>
   </div>
 </section></div>
           
