@@ -66,12 +66,6 @@
     background-color: rgba(10, 10, 10, .8);
     mix-blend-mode: multiply;
   }
-  /* .h-wrapper {
-  background: center / cover no-repeat;
-  background-image: url(https://placeimg.com/1000/1000/tech);
-  background-color: rgba(10, 10, 10, .8);
-  background-blend-mode: multiply;
-} */
   #component-qzpiv .text-overlay {
     text-align: center;
     color: white;
@@ -94,6 +88,9 @@
   #component-qzpiv .title {
     margin: 2rem;
   }
+  #component-qzpiv #heading-desc {
+    padding: 2rem;
+  }
   #component-qzpiv #links {
     display: flex;
     flex-direction: column;
@@ -104,7 +101,7 @@
   }
   @media (min-width: 640px) {
     #component-qzpiv .text-overlay {
-      height: 67.625rem;
+      height: 60rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -139,6 +136,11 @@
       display: flex;
       justify-content: space-between;
       margin: 3.375rem 4.75rem;
+    }
+  }
+  @media (min-width: 1260px) {
+    #component-qzpiv .text-overlay {
+      height: 67.625rem;
     }
   }</style>
       </div>
@@ -242,32 +244,32 @@
     <div>
     	<div class="square"></div>
       <h3 class="h3">Web Design</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
     <div>
     	<div class="square"></div>
       <h3 class="h3">Media &amp; Content</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
     <div>
     	<div class="square"></div>
       <h3 class="h3">Video Production</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
     <div>
     	<div class="square"></div>
       <h3 class="h3">Advertising &amp; PR</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
     <div>
     	<div class="square"></div>
       <h3 class="h3">Development</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
     <div>
     	<div class="square"></div>
       <h3 class="h3">Strategy</h3>
-    	<p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
+    	<p class="p">Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs logo designs handful of more important things.</p>
     </div>
   </div>
 </section></div>
@@ -281,7 +283,7 @@
     text-transform: uppercase;
     letter-spacing: .25rem;
   }
-  #component-fuvci p {
+  #component-fuvci .p {
     color: #9A9A9A;
     line-height: 1.875rem;
   }
@@ -293,12 +295,16 @@
   }
   #component-fuvci .services {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 5rem;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding: 7.625rem 2rem;
-    max-width: 1920px;
+  }
+  @media (min-width: 370px) {
+    #component-fuvci .services {
+      grid-template-columns: repeat(auto-fill, minmax(337px, 1fr));
+      max-width: 1344px;
+    }
   }</style>
       </div>
       
@@ -400,14 +406,6 @@
             <span id="sourcetitle">&nbsp;&nbsp;Adobe sales manager</span>
           </p>          
         </figure>
-      <!--       <figure>
-        <blockquote>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
-        <p><span class="quotename">Calum Chambers &nbsp;&nbsp;— &nbsp;&nbsp;</span><span class="quotetitle">Adobe sales manager</span></p>
-      </figure>
-      <figure>
-        <blockquote>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you will get. Realize that things will be hard at first, but the rewards are worth it.</blockquote>
-        <p><span class="quotename">Calum Chambers &nbsp;&nbsp;— &nbsp;&nbsp;</span><span class="quotetitle">Adobe sales manager</span></p>
-      </figure>  -->
     </div>
   </div>
 </section></div>
@@ -424,19 +422,11 @@
     margin: 0 auto;
     color: var(--dark-color);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 2rem;
-    font-size: 1.125rem;
-  }
-  @media (min-width: 640px) {
-    #component-mubnk .quotesblock {
-      max-width: 70%;
-    }
   }
   #component-mubnk figure {
-    padding: 4rem 4.5rem;
     margin: 0 auto;
-    background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg==);
+    padding: 1rem;
   }
   #component-mubnk blockquote {
     margin: 0;
@@ -450,6 +440,17 @@
   }
   #component-mubnk #sourcetitle {
     font-style: italic;
+  }
+  @media (min-width: 640px) {
+    #component-mubnk .quotesblock {
+      max-width: 1344px;
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+
+    #component-mubnk figure {
+      padding: 4rem 4.5rem;
+      background: padding-box no-repeat url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzEwMHB4JyB3aWR0aD0nMTAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwLCAwLCAxNTAsIDE1MCIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDE4MGRlZykiPjxnPjxwYXRoIGQ9Ik02Ny4xMDQsOC45NTMgQzY4LjIwOCw4Ljk1MyA2OS4xMDQsOS44NDkgNjkuMTA0LDEwLjk1MyBMNjkuMTA0LDcwLjk4OSBDNjkuMTA0LDk4LjIwMyA1OS4xMzEsMTE3Ljc3MiAzNi4xOTgsMTM4LjE3NyBMMzMuNTQ0LDE0MC41NCBDMzIuNzc5LDE0MS4yMjEgMzEuNjI0LDE0MS4yMTUgMzAuODY3LDE0MC41MjUgTDEwLjY4MywxMjIuMTMxIEM5LjgzNywxMjEuMzYxIDkuODA5LDEyMC4wMzkgMTAuNjIxLDExOS4yMzMgTDEzLjU2OCwxMTYuMzA5IEMyNC42NzYsMTA1LjU3NyAzNS4wNDgsOTMuMjI1IDM1LjQ2NSw3Ny4wOTUgTDE0LjgwNiw3Ny4wOTUgQzEzLjcwMSw3Ny4wOTUgMTIuODA2LDc2LjE5OSAxMi44MDYsNzUuMDk1IEwxMi44MDYsMTAuOTUzIEMxMi44MDYsOS44NDkgMTMuNzAxLDguOTUzIDE0LjgwNiw4Ljk1MyBMNjcuMTA0LDguOTUzIHoiIGZpbGw9IiNFQUU5RTkiPjwvcGF0aD48cGF0aCBkPSJNMTM3Ljk3LDguOTUzIEMxMzkuMDc1LDguOTUzIDEzOS45Nyw5Ljg0OSAxMzkuOTcsMTAuOTUzIEwxMzkuOTcsNzAuOTg5IEMxMzkuOTcsOTguMjAzIDEyOS45OTcsMTE3Ljc3MiAxMDcuMDY0LDEzOC4xNzcgTDEwNC40MSwxNDAuNTQgQzEwMy42NDUsMTQxLjIyMSAxMDIuNDksMTQxLjIxNSAxMDEuNzMzLDE0MC41MjUgTDgxLjU0OCwxMjIuMTMxIEM4MC43MDIsMTIxLjM2MSA4MC42NzQsMTIwLjAzOSA4MS40ODYsMTE5LjIzMyBMODQuNDM0LDExNi4zMDkgQzk1LjU0MSwxMDUuNTc3IDEwNS45MTUsOTMuMjI1IDEwNi4zMzEsNzcuMDk1IEw4NS44NjYsNzcuMDk1IEM4NC43NjEsNzcuMDk1IDgzLjg2Niw3Ni4xOTkgODMuODY2LDc1LjA5NSBMODMuODY2LDEwLjk1MyBDODMuODY2LDkuODQ5IDg0Ljc2MSw4Ljk1MyA4NS44NjYsOC45NTMgTDEzNy45Nyw4Ljk1MyB6IiBmaWxsPSIjRUFFOUU5Ij48L3BhdGg+PC9nPjwvc3ZnPg==);
+    }
   }</style>
       </div>
       
@@ -508,8 +509,7 @@
     justify-content: center;
   }
   #component-mcndb .cta {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding: 3rem 2rem 5rem;
   }
   #component-mcndb .h2 {
     color: white;
@@ -526,7 +526,7 @@
           <div><footer class="agency">
   <div id="footerblock">
     <div id="summary">
-      <p id="desc">We create web products for the help and growth of your business.</p>
+      <p id="desc" class="p">We create web products for the help and growth of your business.</p>
     </div>
     <div>
       <ul id="footernav">
@@ -539,8 +539,8 @@
   		</ul> 
     </div>
     <address class="address">
-      <p id="phone">+8 800 555 35 35</p>
-      <p id="email">info@virgo.com</p>
+      <p id="phone" class="p">+8 800 555 35 35</p>
+      <p id="email" class="p">info@virgo.com</p>
     </address>
     <div id="subscribe">
       <p id="subscribe-text">Subscribe to our newsletter</p>
@@ -572,9 +572,6 @@
     padding: 2rem;
     max-width: 1920px;
   }
-  #component-ctuod p {
-    font-size: 1rem;
-  }
   #component-ctuod #summary {
     padding: 1rem;
     display: grid;
@@ -590,7 +587,7 @@
     font-size: 0.8125rem;
     line-height: 1.75rem;
     padding-bottom: 1rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
     -moz-columns: 2;
          columns: 2;
   }
@@ -603,13 +600,11 @@
   }
   #component-ctuod #subscribe {
     padding: 1em;
-    font-size: 1.25rem;
     margin: 0;
     color: #FEFEFE;
     text-align: center;
   }
   #component-ctuod #subscribe-text {
-    font-size: 1.25rem;
     padding-bottom: 1rem;
   }
   #component-ctuod #emailbox {
@@ -620,7 +615,6 @@
     flex: 0 1 100%;
     display: block;
     border-width: 0;
-    font-size: 1rem;
     padding: 1rem 2rem 1rem 2rem;
     margin: 0;
     border-radius: 2rem 0 0 2rem;
@@ -669,6 +663,10 @@
   @media (min-width: 500px) {
     #component-ctuod #subscribe {
       text-align: left;
+    }
+
+    #component-ctuod #footernav {
+      padding-left: 5rem;
     }
   }
   @media (min-width: 590px) {
