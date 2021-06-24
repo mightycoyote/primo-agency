@@ -666,7 +666,7 @@ video {
 .button-link:last-child {
   background-color: var(--brand-color);
   color: white;
-  box-shadow: 0px 625rem 1.25rem var(--brand-shadow);
+  box-shadow: 0px .625rem 1.25rem var(--brand-shadow);
 }
 
 .img {
