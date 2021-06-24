@@ -645,6 +645,10 @@ video {
   font-size: .9rem;
 }
 
+.a:active, .button:active {
+  color: var(--brand-color);
+}
+
 .button-link {
   text-transform: uppercase;
   background-color: white;
