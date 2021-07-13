@@ -604,7 +604,7 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;600&display=swap');
 
-.agency {
+.agency, primo-copy {
   box-sizing: border-box;
   --brand-color: #6534FF;
   --brand-shadow: rgba(101, 52, 255, 0.3);
@@ -638,11 +638,11 @@ video {
 .h3 {
   font-weight: 600;
   color: var(--darkgray);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .p {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .a:active, .button:active {
@@ -759,7 +759,7 @@ video {
   }
 }
 
-/* Default "copy" styles - need to adjust */
+/* Default "copy" styles */
 
 .primo-copy {
   margin: 0 auto;
@@ -772,15 +772,22 @@ video {
 }
 
 .primo-copy h1 {
-    font-size: 4.375rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: var(--display-font);
     color: var(--darkgray);
   }
 
 .primo-copy h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
+    font-family: var(--display-font);
+    color: var(--darkgray);
+  }
+
+.primo-copy h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
     font-family: var(--display-font);
     color: var(--darkgray);
   }
@@ -822,45 +829,25 @@ video {
     background-color: #fce96a;
   }
 
-@media (min-width: 1024px) {
-  .primo-copy h1 {
-    font-size: 3rem;
-  }
+@media (min-width: 1260px) {
+    .primo-copy h1 {
+      font-weight: 700;
+      color: var(--darkgray);
+      font-size: 4.375rem;
+    }
 
-  .primo-copy h2 {
-    font-size: 2.25rem;
-  }
-}
+    .primo-copy h2 {
+      font-weight: 700;
+      color: var(--darkgray);
+      font-size: 2.5rem;
+    }
 
-@media (min-width: 640px) {
-  .primo-copy {
-    max-width: 640px;
+    .primo-copy h3 {
+      font-weight: 600;
+      color: var(--darkgray);
+      font-size: 1.25rem;
+    }
   }
-}
-
-@media (min-width: 768px) {
-  .primo-copy {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .primo-copy {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .primo-copy {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .primo-copy {
-    max-width: 1536px;
-  }
-}
 
 @media (min-width: 640px) {
 }
@@ -875,7 +862,5 @@ video {
 }
 
 @media (min-width: 1536px) {
-}
-
-  
+}  
     
