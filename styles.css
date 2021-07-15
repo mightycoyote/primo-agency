@@ -645,7 +645,7 @@ video {
   font-size: 1rem;
 }
 
-.a:active, .button:active {
+.a:active, a:hover, .button:active {
   color: var(--brand-color);
 }
 
